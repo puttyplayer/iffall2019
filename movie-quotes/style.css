@@ -1,0 +1,48 @@
+body{
+    background-color: #b0bbff;
+    margin: 0px;
+
+}
+div{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+h1{
+   
+    font-size: 60pt;
+}
+h2{
+    font-size: 50pt;
+}
+
+#header{
+    font-stretch: extra-expanded;
+    font: 200;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #00daff;
+    margin: 0px;
+    height: 100%;
+
+}
+
+#body{
+    height: 100%;
+    padding-top: 100px;
+}
+
+mark{
+    background-color: inherit;
+    font-size: 15pt;
+    font-stretch: ultra-expanded;
+    margin-bottom: 15px;
+    
+}
+
+p{
+    display: block;
+    white-space: pre;
+}
