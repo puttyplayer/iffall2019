@@ -1,0 +1,45 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    margin: 20%;
+    margin-top: 10%;
+}
+h1{
+    font-size: 30pt;
+    text-decoration: underline;
+}
+h4{
+    font-weight: 100;
+    font-style: italic;
+}
+#header h1{
+    text-decoration: none;
+}
+p{
+    font-size: 18pt;
+}
+
+div{
+    padding: 20px;
+    border-bottom: 5px solid red;
+}
+
+#weight{
+    font-weight: bold;
+}
+
+#style{
+    font-style: italic;
+}
+
+#spacing{
+    letter-spacing: 10px;
+}
+
+#transform{
+    text-transform: uppercase;
+}
+
+#fancy{
+    text-decoration: underline;
+}
+
