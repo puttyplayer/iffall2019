@@ -1,6 +1,7 @@
 body{
     margin: 0;
-    background-color: rgba(230, 230, 231)
+    font-family: 'Abel', sans-serif;
+    background-color: rgba(230, 230, 231);
 }
 
 
@@ -28,7 +29,7 @@ body{
 p{
     margin-left: 25%;
     margin-right: 25%;
-  font: 20pt Sans-Serif;
+  font-size: 30px;
   white-space: pre;
   line-height: 45pt;
   padding-bottom: 0px;
@@ -47,4 +48,45 @@ p{
     width: auto;
     max-width: 150px;
     max-height: 150px;
+}
+
+#gold{
+    display: inline;
+    position: relative;
+    text-transform: uppercase;
+	font-size: 40pt;
+	letter-spacing: 2px;
+	color: rgba(219, 178, 12, 0.5);
+
+}
+#gold:after{
+    content: "Gold digger";
+    text-transform: uppercase;
+    position: absolute; 
+    left: -2px; 
+    top: -5px;
+    color: rgba(48,28,28,0.5);   
+    
+}
+
+
+#broke{
+   color: transparent;
+   text-shadow: 0 0 5px rgba(0,0,0,0.8);
+}
+#down{
+    position: absolute; 
+    background-color: black;
+    color: #fff;
+
+}
+h1{
+    letter-spacing: 10pt;
+    font-size: 100pt
+    align-self: center;
+    text-align: center;
+}
+
+#chorus{
+    font-family: 'Manjari', sans-serif;
 }
