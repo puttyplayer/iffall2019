@@ -1,0 +1,63 @@
+header{
+    margin-bottom: 3rem;
+}
+
+p{
+    line-height: 1.6;
+}
+
+.see-all{
+    text-transform: uppercase;
+    text-emphasis: 0.8em;
+}
+
+.shows h1{
+    font-size: 2.5rem;
+    border-top: 1px;
+}
+
+.shows h2{
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+h1{
+    font-weight: lighter;
+}
+
+h2{
+    font-weight: lighter;
+}
+
+img{
+    width: 100%;
+}
+
+.cast li{
+    width: 25%;
+}
+
+nav .selected a{
+    color: black;
+    font-weight: bold;
+}
+
+.cast a div:first-child{
+    font-size: 0.8rem;
+
+}
+
+.cast a div:last-child{
+    font-weight: bold;
+
+}
+
+#game-of-thrones .seasons li:last-child:after{
+    content: "*";
+}
+
+#game-of-thrones .seasons:after{
+    content: "* Final Season";
+    font-size: 0.7rem;
+    color: #999;
+}
