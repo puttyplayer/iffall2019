@@ -1,0 +1,127 @@
+body{
+    margin: 0px;
+    font-family: 'Archivo Narrow', sans-serif;
+    background-color: rgba(230, 230, 231);
+}
+h1{
+    font-size: 50pt;
+}
+
+h3{
+    font-size: 35pt;
+    text-align: center;
+}
+
+#head_section{
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    background-image: url(kanye.jpg);
+    position: relative;
+    line-height: 20px;
+
+}
+.center{
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+#box{
+    position: absolute;
+    left: 50%;
+    top: 30%;
+}
+
+
+
+
+
+#body{
+    color: white;
+    background-color: cadetblue;
+    padding-bottom: 5%;
+    padding-top: 2%;
+
+
+}
+
+
+#body_content{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+#body_content h4{
+   font-size: 30pt;
+   text-align: center;
+}
+
+#p_img{
+    float: right;
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-width: 2px;
+    border-color: white;
+    border-style: double;
+}
+
+#about_us{
+    background-color: red;
+    color: white;
+    height: 100%;
+    padding-top: 2%;
+    padding-bottom: 8%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    font-size: 15pt;
+
+
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-bottom: 20px;
+}
+
+#photo_section{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.photo_box{
+    padding: 5%;
+
+}
+
+
+
+#photo_section img{
+    float: left;
+    display: inline;
+    margin-right: 20px;
+    padding-bottom: 20px;
+
+}
+
+h2{
+    text-align: center;
+}
+
+#footer{
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-bottom: 1%;
+
+
+
+}
+
+#about_us p {
+    font-size: 20pt;
+}
