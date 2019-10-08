@@ -1,0 +1,28 @@
+#first {
+    float: right;
+}
+
+#second{
+    position: relative;
+    left: 640px;
+    top: 300px;
+
+}
+
+#third{
+    background-color: green;
+    position: sticky;
+    top: 0px;
+    left: 900px;
+}
+
+#fourth{
+    background-color: red;
+
+}
+
+#fifth{
+    background-color: black;
+
+
+}
