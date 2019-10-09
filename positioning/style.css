@@ -11,18 +11,26 @@
 
 #third{
     background-color: green;
-    position: sticky;
-    top: 0px;
-    left: 900px;
+    position: fixed;
+    top: 0;
+    right: 0;
 }
 
 #fourth{
-    background-color: red;
+    background-color:black;
+    position: absolute;
+    left:730px;
+    top:2270px;
 
 }
 
 #fifth{
-    background-color: black;
+    background-color:red;
+    position: relative;
+    bottom:10px;
+    left:440px;
+   
+
 
 
 }
