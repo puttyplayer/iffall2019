@@ -130,17 +130,44 @@
 
             a#btn_tesla:hover{
                 animation-name: example;
-                animation-duration: 4s;
+                animation-duration: 1s;
             }
 
               
               /* Standard syntax */
               @keyframes example {
-                0%   {filter:  grayscale(100%); }
-                25%  {filter:  hue-rotate(130deg); }
-                50%  {filter:  saturate(4200%); }
-                100% {filter:  hue-rotate(130deg); }
+                0%   {                background-image:
+                    linear-gradient(to right, green,green 15%,white 15%,white 85%,white 85%);}
+                25%  {                background-image:
+                    linear-gradient(to right, green,green 15%,green 15%,white 85%,white 85%);
+                }
+                50%  {                 background-image:
+                    linear-gradient(to right, green,green 15%,green 15%,green 85%,white 85%);
+                }
+                100% {                  background-image:
+                    linear-gradient(to right, green,green 15%,green 15%,green 85%,green 85%);
+                }
               }
+
+            a#btn_newyorker:hover{
+                border: 25px solid;
+
+            }
+
+            a#btn_npr:hover{
+                background-color: #eee;
+                box-shadow:
+                /* The top layer shadow */
+                0 -1px 1px rgba(0,0,0,0.15),
+                /* The second layer */
+                0 -10px 0 -5px #eee,
+                /* The second layer shadow */
+                0 -10px 1px -4px rgba(0,0,0,0.15),
+                 /* The third layer */
+                0 -20px 0 -10px #eee,
+                /* The third layer shadow */
+                0 -20px 1px -9px rgba(0,0,0,0.15);
+            }
        
 
 
@@ -162,4 +189,11 @@
 			a#btn_indiegogo:hover {
 				color: #fff;
 				background-color: #eb1478;
-			}
+            }
+            
+            a#btn_fb:hover{
+                background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fpngimg.com%2Fuploads%2Fsoviet_union%2Fsoviet_union_PNG23.png&f=1&nofb=1);
+                background-position: center;
+                background-size: contain; 
+   
+            }
