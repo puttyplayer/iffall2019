@@ -83,12 +83,14 @@
     </div>
 
     <div id="nutrition container">
-        <h2>Nutrition</h2>
+        <h3>Nutrition</h3>
         <svg
         class="progress-ring"
         width="120"
-        height="120">
-        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">65%</text>    
+        height="150">
+        <text x="50%" y="40%" dominant-baseline="middle" text-anchor="middle">30% DV</text>
+        <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle">350 Calories</text>    
+   
 
        <circle
          class="progress-ring__circle"
@@ -99,6 +101,43 @@
          cx="60"
          cy="60"/>
      </svg>
+
+     <svg
+        class="progress-ring"
+        width="120"
+        height="150">
+        <text x="50%" y="40%" dominant-baseline="middle" text-anchor="middle">100% DV</text>
+        <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle">18g protein</text>    
+   
+
+       <circle
+         class="progress-ring__circle"
+         stroke="#1FD388"
+         stroke-width="4"
+         fill="transparent"
+         r="52"
+         cx="60"
+         cy="60"/>
+     </svg>
+
+     <svg
+        class="progress-ring"
+        width="120"
+        height="150">
+        <text x="50%" y="40%" dominant-baseline="middle" text-anchor="middle">100% DV</text>
+        <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle">12g Fat</text>    
+   
+
+       <circle
+         class="progress-ring__circle"
+         stroke="#1FD388"
+         stroke-width="4"
+         fill="transparent"
+         r="52"
+         cx="60"
+         cy="60"/>
+     </svg>
+     
      
 
     </div>
@@ -130,11 +169,12 @@
     circle.style.strokeDashoffset = `${circumference}`;
 
     function setProgress(percent) {
-    const offset = circumference - percent / 100 * circumference;
-    circle.style.strokeDashoffset = offset;
+        const offset = circumference - percent / 100 * circumference;
+        circle.style.strokeDashoffset = offset;
     }
 
-    setProgress(50);
+    setProgress(30);
+
 
      
     
