@@ -6,9 +6,138 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" tymarke="text/css" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie&display=swap" rel="stylesheet">
+
     <title>Recipe</title>
 </head>
 <body>
-    <h1> Title</h1>
+    <div id="header">
+        <h2> David's Recipes</h2>    
+    </div>
+    <div id="welcome">
+        <img src="iu-6.png" alt="" class="img">
+
+        <h2 id="chicken"> Thai Cury Chicken</h2>
+        <h3>16 Ingredients | 30 Minutes | 340 Calories</h3>
+        <div id="stars_container">
+            <img src="iu-7.png" alt="" class="star">
+            <img src="iu-7.png" alt="" class="star">
+            <img src="iu-7.png" alt="" class="star">
+            <img src="iu-7.png" alt="" class="star">
+        </div>
+  
+
+    </div>
+    <div id="ing_container">
+            <button id="btn" onclick="myFunction()">Ingredients</button>
+
+            <div id="ingredient_lst">
+              <ul>
+                  <li>                    1 vidalia onion (or yellow onion, diced small)
+                    </li>
+                  <li>                    1 pound boneless skinless chicken breast (diced into bite-sized pieces)
+                    </li>
+                  <li>                    3 teaspoons ground ginger (or 1 tablespoon fresh ginger, finely chopped)
+                    </li>
+                  <li>                    2 teaspoons ground coriander
+                    </li>
+                  <li>                    13 ounces coconut milk (I used lite; full-fat will deliver a richer/thicker result)
+                    </li>
+                  <li>                    1 1/2 cups shredded carrots
+                    </li>
+                  <li>                    3 tablespoons Thai red curry paste (or to taste, curry powder may be substituted, to taste)
+                    </li>
+                  <li>                    1 teaspoon kosher salt (or to taste)
+                    </li>
+                  <li>                    1/2 teaspoon freshly ground black pepper (or to taste)
+                    </li>
+                  <li>                    3 cups fresh spinach leaves
+                    </li>
+                  <li>                    1 tablespoon lime juice
+                    </li>
+
+                  <li>                    2 tablespoons brown sugar (optional and to taste)
+                    </li>
+                    <li>                    rice (quinoa, or naan, optional for serving)
+                        </li>
+              </ul>
+            </div>
+    </div>
+    <div id="dir_container">
+        <button id="btn" onclick="directionHide()">Directions</button>
+        <div id="dir_list">
+                <ol>
+                        <li>To a large skillet, add the oil, onion, and sauté over medium-high heat until the onion begins to soften about 5 minutes; stir intermittently.</li>
+                        <li> Add the chicken and cook for about 5 minutes, or until chicken is done; flip and stir often to ensure even cooking.
+                            </li>
+                        <li>Add the garlic, ginger, coriander, and cook for about 1 minute, or until fragrant; stir frequently.
+                            </li>
+                        <li>Add the coconut milk, carrots, Thai curry paste, salt, pepper, and stir to combine. Reduce the heat to medium, and allow mixture to gently boil for about 5 minutes, or until liquid volume has reduced as much as desired and thickens slightly.
+                            </li>
+                        <li>Add the spinach, lime juice, and stir to combine. Cook until spinach has wilted and is tender, about 1 to 2 minutes. Taste and optionally add brown sugar, additional curry paste, salt, pepper, etc. to taste.
+                            </li>
+                    </ol>
+
+        </div>
+ 
+    </div>
+
+    <div id="nutrition container">
+        <h2>Nutrition</h2>
+        <svg
+        class="progress-ring"
+        width="120"
+        height="120">
+        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">65%</text>    
+
+       <circle
+         class="progress-ring__circle"
+         stroke="#1FD388"
+         stroke-width="4"
+         fill="transparent"
+         r="52"
+         cx="60"
+         cy="60"/>
+     </svg>
+     
+
+    </div>
+    <script>
+        function myFunction() {
+        var x = document.getElementById("ingredient_lst");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+
+    function directionHide() {
+        var x = document.getElementById("dir_list");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+    //modified from https://css-tricks.com/building-progress-ring-quickly/
+
+    var circle = document.querySelector('circle');
+    var radius = circle.r.baseVal.value;
+    var circumference = radius * 2 * Math.PI;
+
+    circle.style.strokeDasharray = `${circumference} ${circumference}`;
+    circle.style.strokeDashoffset = `${circumference}`;
+
+    function setProgress(percent) {
+    const offset = circumference - percent / 100 * circumference;
+    circle.style.strokeDashoffset = offset;
+    }
+
+    setProgress(50);
+
+     
+    
+    </script>
 </body>
 </html>

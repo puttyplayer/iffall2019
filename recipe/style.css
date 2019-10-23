@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    background-color: #E5E5E5;
+}
+.img{
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.first-letter {
+    font-size: 35px;
+    line-height: 70px;
+  }
+
+.star{
+    width: 30px;
+    
+}
+#stars_container{
+    margin: auto;
+    width: 40%;
+    border: 3px solid #1FD388;
+    padding: 10px;
+    margin-bottom: 50px;
+
+
+}
+
+#header{
+   width: 100%;
+   padding-top: 0.5%;
+   padding-bottom: 0.5%;
+   font-family: 'Reenie Beanie', cursive;
+    text-align: center;
+    font-size: 20pt;
+
+    background: #1FD388;
+}
+.button_container{
+    margin: auto;
+    width: 50%;
+
+}
+#btn{
+    background: #1FD388;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px 60% 20px 30px;
+    text-decoration: none;
+    font-size: 18pt;
+    color: black;
+
+}
+
+#chicken{
+    font-family: 'Reenie Beanie', cursive;
+    text-align: center;
+    font-size: 30pt;
+
+}
+
+h3{
+    text-align: center;
+    font-size: 15pt;
+    color: grey;
+}
+
+#ing_container{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#dir_container{
+    margin-top: 0;
+    padding-top: 0;
+}
