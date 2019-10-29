@@ -30,8 +30,8 @@ body{
     justify-content:center;
     align-items:center;
     width:100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 0.83em;
+    padding-bottom: 0.83em;
 
 }
 #nutrition-container{
@@ -45,7 +45,8 @@ body{
 }
 
 #header{
-   width: 105%;
+   width: 105vw;
+   margin-right: 0;
    padding-top: 0.5%;
    padding-bottom: 0.5%;
    font-family: 'Reenie Beanie', cursive;
@@ -107,10 +108,25 @@ h4{
     padding-right: 10%
 
 }
+li{
+    line-height: 20pt;
+    padding-bottom: 15pt;
+    font-size: 15pt;
+    padding-left: 30px;
+    margin-left: 10px;
+}
+
+#info{
+    display: inline;
+
+}
 h3{
+
     text-align: center;
     font-size: 13pt;
     color: grey;
+    padding-bottom: 0;
+    padding-top: 0;
 }
 
 #ing_container{
