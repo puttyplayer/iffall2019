@@ -36,7 +36,7 @@ body{
     padding-bottom: 0.83em;
 
 }
-#nutrition-container{
+.nutrition-container{
   display:flex;
   justify-content:center;
   align-items:center;
