@@ -99,10 +99,17 @@ h4{
 
 
 }
+.vm{
+    padding-top: 30px;
+    font-size: 15pt;
+    font-weight: bold;
+    padding-left: 10%;
+    padding-right: 10%
 
+}
 h3{
     text-align: center;
-    font-size: 15pt;
+    font-size: 13pt;
     color: grey;
 }
 
