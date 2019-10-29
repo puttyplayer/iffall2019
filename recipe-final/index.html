@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" tymarke="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie&display=swap" rel="stylesheet">
+
+    <title>Recipe</title>
+</head>
+<body>
+  <div id="header">
+      <h2> David's Recipes</h2>    
+  </div>
+  <div id="welcome">
+    <img src="iu-6.png" alt="" class="img">
+    <h2 id="chicken"> Thai Cury Chicken</h2>
+
+    <div id="stars_container">
+        <img src="iu-7.png" alt="" class="star">
+        <img src="iu-7.png" alt="" class="star">
+        <img src="iu-7.png" alt="" class="star">
+        <img src="iu-7.png" alt="" class="star">
+        <img src="iu-7.png" alt="" id="gray" class="star">
+
+    </div>
+
+   
+  <h3> 16 Ingredients | 30 Minutes | 340 Calories </h3>
+
+  <div>
+      <div id="btn"><h4>Nutrition</h4></div>
+
+    <div id="nutrition-container">
+        <!-- <h3>Nutrition</h3> -->
+        <svg
+        class="progress-ring"
+        width="120"
+        height="150">
+        <text x="50%" y="40%" dominant-baseline="middle" text-anchor="middle">30% DV</text>
+        <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle">350 Calories</text>    
+   
+
+       <circle
+       id="circle2"
+
+         class="progress-ring__circle"
+         stroke="#1FD388"
+         stroke-width="4"
+         fill="transparent"
+         r="52"
+         cx="60"
+         cy="60"/>
+     </svg>
+
+     <svg
+        class="progress-ring"
+        width="120"
+        height="150">
+        <text x="50%" y="40%" dominant-baseline="middle" text-anchor="middle">100% DV</text>
+        <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle">18g protein</text>    
+   
+
+       <circle
+       id="circle1"
+         class="progress-ring__circle"
+         stroke="#1FD388"
+         stroke-width="4"
+         fill="transparent"
+         r="52"
+         cx="60"
+         cy="60"/>
+     </svg>
+
+     <svg
+        class="progress-ring"
+        width="120"
+        height="150">
+        <text x="50%" y="40%" dominant-baseline="middle" text-anchor="middle">100% DV</text>
+        <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle">12g Fat</text>    
+   
+
+       <circle
+       id="circle3"
+         class="progress-ring__circle"
+         stroke="#1FD388"
+         stroke-width="4"
+         fill="transparent"
+         r="52"
+         cx="60"
+         cy="60"/>
+    </svg>
+  </div>
+  </div>
+
+  <div>
+    <div id="ing_container">
+            <div id="btn">Ingredients</div>
+
+            <div id="ingredient_lst">
+              <ul>
+                  <li>                    1 vidalia onion (or yellow onion, diced small)
+                    </li>
+                  <li>                    1 pound boneless skinless chicken breast (diced into bite-sized pieces)
+                    </li>
+                  <li>                    3 teaspoons ground ginger (or 1 tablespoon fresh ginger, finely chopped)
+                    </li>
+                  <li>                    2 teaspoons ground coriander
+                    </li>
+                  <li>                    13 ounces coconut milk (I used lite; full-fat will deliver a richer/thicker result)
+                    </li>
+                  <li>                    1 1/2 cups shredded carrots
+                    </li>
+                    <button id="more_ing_btn" onclick="myFunction()">↓ View More Ingredients</button>
+                  <div id="more_ing">
+                      <li>                    3 tablespoons Thai red curry paste (or to taste, curry powder may be substituted, to taste)
+                        </li>
+                      <li>                    1 teaspoon kosher salt (or to taste)
+                        </li>
+                      <li>                    1/2 teaspoon freshly ground black pepper (or to taste)
+                        </li>
+                      <li>                    3 cups fresh spinach leaves
+                        </li>
+                      <li>                    1 tablespoon lime juice
+                        </li>
+    
+                      <li>                    2 tablespoons brown sugar (optional and to taste)
+                        </li>
+                        <li>                    rice (quinoa, or naan, optional for serving)
+                            </li>
+
+                  </div>
+                  
+              </ul>
+            </div>
+    </div>
+    <div id="dir_container">
+        <div id="btn">Directions</div>
+        <div id="dir_list">
+                <ol>
+                        <li>To a large skillet, add the oil, onion, and sauté over medium-high heat until the onion begins to soften about 5 minutes; stir intermittently.</li>
+                        <li> Add the chicken and cook for about 5 minutes, or until chicken is done; flip and stir often to ensure even cooking.
+                            </li>
+                        <li>Add the garlic, ginger, coriander, and cook for about 1 minute, or until fragrant; stir frequently.
+                            </li>
+                            <button id="more_dir_btn" onclick="directionHide()">↓ View More Ingredients</button>
+
+                          <div id="more_dir">
+                            <li>Add the coconut milk, carrots, Thai curry paste, salt, pepper, and stir to combine. Reduce the heat to medium, and allow mixture to gently boil for about 5 minutes, or until liquid volume has reduced as much as desired and thickens slightly.
+                                </li>
+                            <li>Add the spinach, lime juice, and stir to combine. Cook until spinach has wilted and is tender, about 1 to 2 minutes. Taste and optionally add brown sugar, additional curry paste, salt, pepper, etc. to taste.
+                                </li>
+                          </div>
+                    </ol>
+
+        </div>
+ 
+    </div>
+
+    <div id="header">
+        <h2> Enjoy!</h2>    
+    </div>
+
+
+    </div>
+    <script>
+        function myFunction() {
+        var x = document.getElementById("more_ing");
+        var btn_more = document.getElementById("more_ing_btn");
+
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "block";
+        }
+        btn_more.style.display = "none";
+    }
+
+    function directionHide() {
+        var x = document.getElementById("more_dir");
+        var btn_more = document.getElementById("more_dir_btn");
+
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "block";
+        }
+        btn_more.style.display = "none";
+
+    }
+    //modified from https://css-tricks.com/building-progress-ring-quickly/
+
+    var circle = document.getElementById('circle1');
+    var circle2 = document.getElementById('circle2');
+
+    var radius = circle.r.baseVal.value;
+    var circumference = radius * 2 * Math.PI;
+
+    circle.style.strokeDasharray = `${circumference} ${circumference}`;
+    circle.style.strokeDashoffset = `${circumference}`;
+
+    function setProgress(percent) {
+        const offset = circumference - percent / 100 * circumference;
+        circle.style.strokeDashoffset = offset;
+        circle2.style.strokeDashoffset = offset;
+
+    }
+
+    var circle2 = document.getElementById('circle2');
+
+    var radius = circle2.r.baseVal.value;
+    var circumference = radius * 2 * Math.PI;
+
+    circle2.style.strokeDasharray = `${circumference} ${circumference}`;
+    circle2.style.strokeDashoffset = `${circumference}`;
+
+    function setProgress2(percent) {
+        const offset = circumference - percent / 100 * circumference;
+        circle2.style.strokeDashoffset = offset;
+
+    }
+
+     var circle2 = document.getElementById('circle2');
+
+    var radius = circle2.r.baseVal.value;
+    var circumference = radius * 2 * Math.PI;
+
+    circle2.style.strokeDasharray = `${circumference} ${circumference}`;
+    circle2.style.strokeDashoffset = `${circumference}`;
+
+    function setProgress2(percent) {
+        const offset = circumference - percent / 100 * circumference;
+        circle2.style.strokeDashoffset = offset;
+
+    }
+    var circle3 = document.getElementById('circle3');
+
+    var radius = circle3.r.baseVal.value;
+    var circumference = radius * 2 * Math.PI;
+
+    circle3.style.strokeDasharray = `${circumference} ${circumference}`;
+    circle3.style.strokeDashoffset = `${circumference}`;
+
+    function setProgress3(percent) {
+        const offset = circumference - percent / 100 * circumference;
+        circle3.style.strokeDashoffset = offset;
+
+    }
+
+    setProgress(30);
+    setProgress2(40);
+    setProgress3(60);
+
+
+     
+    
+    </script>
+</body>
+</html>
