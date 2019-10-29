@@ -11,9 +11,12 @@
     <title>Recipe</title>
 </head>
 <body>
-  <div id="header">
-      <h2> David's Recipes</h2>    
-  </div>
+
+    <div id="header">
+        <h2> David's Recipes</h2>    
+    </div>
+  
+
   <div id="welcome">
     <img src="iu-6.png" alt="" class="img">
     <h2 id="chicken"> Thai Cury Chicken</h2>
@@ -34,7 +37,7 @@
     </div>
 
 
-    <div id="btn">Nutrition&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="btn">Nutrition</div>
 
   </div>
 
@@ -103,7 +106,7 @@
   <div>
 
     <div id="ing_container">
-            <div id="btn">Ingredients</div>
+            <div class="btn">Ingredients</div>
 
             <div id="ingredient_lst">
               <ul>
@@ -143,7 +146,8 @@
             </div>
     </div>
     <div id="dir_container">
-        <div id="btn">Directions&nbsp;&nbsp;</div>
+        <div class="btn">Directions</div>
+      
         <div id="dir_list">
                 <ol>
                         <li>To a large skillet, add the oil, onion, and sauté over medium-high heat until the onion begins to soften about 5 minutes; stir intermittently.</li>
@@ -165,8 +169,10 @@
  
     </div>
 
-    
-    <div id="btn">Enjoy!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div id="header">
+        <h2> Enjoy!</h2>    
+    </div>
+    <!-- <div class="btn">Enjoy!</div> -->
 
 
 
@@ -258,6 +264,16 @@
     setProgress(30);
     setProgress2(40);
     setProgress3(60);
+
+    var docWidth = document.documentElement.offsetWidth;
+[].forEach.call(
+  document.querySelectorAll('*'),
+  function(el) {
+    if (el.offsetWidth > docWidth) {
+      console.log(el);
+    }
+  }
+);
 
 
      
