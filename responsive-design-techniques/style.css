@@ -50,7 +50,6 @@ body{
         padding-left: 0;
         display: grid;
         grid-gap: 10%;
-        margin-left: 10%;
         font-size: 0.8rem;
         grid-template-columns: 40% 40%;
 
@@ -65,7 +64,6 @@ body{
         display: grid;
         grid-gap: 10%;
         font-size: 0.8rem;
-        margin-left: 10%;
         grid-template-columns: repeat(auto-fill, 15%);
       
       }
@@ -82,5 +80,9 @@ body{
 
 #stretchable-grid-items li{
     list-style-type: none;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     
 }
