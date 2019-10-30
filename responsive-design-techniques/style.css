@@ -1,0 +1,22 @@
+body{
+    margin: auto;
+    width: 800px;
+}
+
+@media only screen and (mix-width: 640px) {
+    body {
+      background-color:#eaf6ff;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+  }
+
+
+
+@media only screen and (max-width: 500px) {
+    
+    h1{
+        font-size: 1.5rem;
+    }
+  }
