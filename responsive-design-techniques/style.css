@@ -41,7 +41,6 @@ body{
         display: grid;
         grid-gap: 10%;
         font-size: 0.8rem;
-
         grid-template-columns: repeat(auto-fill, 100%);
       }
   }
@@ -50,9 +49,11 @@ body{
     #stretchable-grid-items ul{
         padding-left: 0;
         display: grid;
-        /* grid-gap: 10%; */
+        grid-gap: 10%;
         font-size: 0.8rem;
-        grid-template-columns: repeat(auto-fill, 50%);
+        grid-template-columns: 30% 30%;
+
+        /* grid-template-columns: repeat(50%, 50%); */
       
       }
   }
@@ -61,9 +62,9 @@ body{
     #stretchable-grid-items ul{
         padding-left: 0;
         display: grid;
-        /* grid-gap: 10%; */
+        grid-gap: 10%;
         font-size: 0.8rem;
-        grid-template-columns: repeat(auto-fill, 25%);
+        grid-template-columns: repeat(auto-fill, 15%);
       
       }
 
