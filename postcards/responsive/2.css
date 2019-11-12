@@ -12,6 +12,17 @@ body {
 
 
 }
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:visited{
+    text-decoration: none;
+    color: white;
+
+
+}
 .parent{
     height: 90vh;
 
