@@ -1,0 +1,130 @@
+body {
+	margin: 0;
+
+    background-color: rgb(265,166,161); /*Default bg, similar to the background's base color*/
+    background-image: url("wtH.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    font-family: 'Righteous', cursive;
+    background-position: bottom right;
+    background-size: cover;
+
+
+
+}
+.parent{
+    height: 90vh;
+
+}
+
+#one{
+    margin-top: 0;
+    width: 100%;
+    /* overflow-wrap: break-word; */
+    color: black;
+    position: relative;
+    left: 0%;
+    top: 5%;
+
+
+
+}
+
+#two{
+    margin-top: 0;
+    width: 100%;
+    /* overflow-wrap: break-word; */
+    color: black;
+    position: relative;
+    left: 0%;
+    top: 80%;
+    line-height: 3%;
+}
+
+p{
+    text-align: center;
+    line-height: 15%;
+}
+
+
+
+.small{
+    font-size: 5vw;
+}
+
+@media only screen and (max-width: 880px) {
+
+    body {
+        margin: 0;
+    
+        background-color: rgb(265,166,161); /*Default bg, similar to the background's base color*/
+        background-image: url("wthMobile.png");
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto;
+        font-family: 'Righteous', cursive;
+        background-position: bottom;
+        background-attachment: fixed;
+
+    
+    
+    
+    }
+    #one,#two{
+        margin-top: 0;
+        width: 100%;
+        /* overflow-wrap: break-word; */
+        color: white;
+        position: relative;
+        left: 8%;
+        top: 95%;
+        line-height: 4%;
+        text-align: left;
+    
+    }
+
+ 
+    
+  }
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        margin: 0;
+    
+        background-color: rgb(265,166,161); /*Default bg, similar to the background's base color*/
+        background-image: url("wthMobile.png");
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto;
+        font-family: 'Righteous', cursive;
+        background-position: bottom;
+        background-attachment: fixed;
+
+    
+    
+    
+    }
+    #one,#two{
+        margin-top: 0;
+        width: 100%;
+        /* overflow-wrap: break-word; */
+        color: white;
+        position: relative;
+        left: 8%;
+        top: 20%;
+        line-height: 4%;
+        text-align: left;
+    
+    }
+
+ 
+    
+  }
+
