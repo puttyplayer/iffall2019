@@ -1,0 +1,159 @@
+:root {
+    --main-bg-header: #f2b632;
+  }
+
+
+html,body{
+    margin: 0;
+    padding:0;
+    color: #F3F4F5;
+    background:#252839;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+
+div{
+    margin: 0;
+}
+.section{
+    max-height: 100vh;
+    min-height: 100vh;
+}
+h1{
+    margin: 0;
+}
+p{
+    margin: 0;
+}
+
+.text{
+    max-height: 100vh;
+    min-height: 100vh;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 7vh;
+     
+
+
+}
+.text h1{
+    position: relative;
+    top: 5.5vh;
+    font-size: 45pt;
+  
+}
+.text p{
+    padding-top: 3vh;
+    line-height: 4vh;
+    font-size:15pt;
+    margin: auto;
+
+   
+
+}
+
+#landing-image{
+    height: 47vh;
+    position: absolute;
+    top: 28vh;
+    right: 25vw;
+    
+}
+
+
+#landing h1{
+    position: relative;
+    text-align: center;
+    opacity: 0.85 !important;
+    top: 5vh;
+    z-index: 1;
+}
+
+h3{
+    background-color: var(--main-bg-header);
+    opacity: 0.85;
+    text-align: center;
+    position: relative;
+    top: 65vh;
+    margin-right: auto;
+
+    font-size: 30pt;
+}
+
+#one{
+    background-image: url(snow1.jpg);
+    background-repeat: no-repeat;
+}
+
+.section h1{
+    background-color: var(--main-bg-header);
+    opacity: 0.8  !important;
+    position: relative;
+    top: 30vh;
+    padding-left: 50px;
+    font-size: 70pt;
+}
+
+#two{
+    background-image: url(l2.jpg);
+}
+
+#three{
+    background-image: url(l3.jpg);
+}
+
+#halfView{
+    background-image: url(halfView.jpg);
+}
+
+
+#conserve{
+    background-image: url(conserve.jpg);
+    background-repeat: no-repeat;
+}
+
+#donate{
+    background-image: url(sm.jpg);
+
+}
+#donate_header{
+    font-family: 'Rock Salt', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 172px;
+    color: #000000;
+    position: relative;
+    left: 80vh;
+    top: 5vh;
+
+}
+
+#box{
+    position: relative;
+    background-color: white;
+}
+
+#donateBtn{
+    background-color: var(--main-bg-header);
+    opacity: 0.9;
+    position: relative;
+    top: 40vh;
+    text-align: center;
+    font-size: 60pt;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+
+
+}
