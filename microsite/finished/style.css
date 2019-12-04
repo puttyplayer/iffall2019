@@ -96,7 +96,7 @@ p{
 
 h3{
    margin-top: 0.8vh;
-   margin-bottom: 0.8vh;
+   margin-bottom: 1vh;
     background-color: var(--main-bg-header);
     opacity: 0.85;
     text-align: center;
@@ -179,41 +179,3 @@ h3{
 
 }
 
-
-/* css help from co */
-.parent{
-    text-align:center;
-
-}
-.placeholder{
-    display:inline-block;
-    margin: auto;
-    position:relative;
-    width:100vw;
-    height:70vh;
-    overflow:hidden;
-    box-sizing:border-box;
-  }
-  
-  .placeholder:hover .gridTile {
-    background-position: 0px 0px !important;
-  }
-  
-  .gridContainer{
-    width:100%;
-    height:100%; 
-  }
-  
-  .gridTile
-  {
-    background-image: url(http://fullhdpictures.com/wp-content/uploads/2015/03/Snow-Leopard-Full-HD-Wallpapers.jpg);
-    position:absolute;
-    top:0px;
-    left:0px;
-    width:100%;
-    height:100%;
-    background-size:cover;
-    background-repeat:no-repeat;
-    background-origin:center;
-    transition: background-position .3s cubic-bezier(0.76, 1.52, 0.58, 1);
-  }
