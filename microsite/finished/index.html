@@ -13,10 +13,17 @@
     <title>Mockup</title>
 </head>
 <body>
+        <!-- all photos from flickr gallery here https://www.flickr.com/groups/snowleopards/pool/page5 -->
     <div>
             <div id="landing" class="section">
                 <h1>Protect the Snow Lepoard</h1>
-                <img id="landing-image" src="header.jpg" alt="">
+                <img id="landing-image" src="http://www.twitrcovers.com/wp-content/uploads/2014/06/Snow-Leopard-l.jpg" alt="">
+                <!-- <div id="parent">
+                        <div id="test"></div>
+                                <div class="placeholder"></div>
+
+                </div> -->
+
                 <!-- <img id="landing-image2" src="header.jpg" alt=""> -->
                                         <!-- lifecycle conserve donate -->
                 <h3><a href="#habitat">Habitat</a> <span></span>  <a href="#diet">Diet</a> <span></span> <a href="#behavior">Behavior</a>  <span></span>  <a href="#lifeCycle">Life Cycle</a>  <span></span> <a href="#conserve">Conserve</a> <span></span> <a href="#donate">Donate</a></h3>
@@ -172,7 +179,71 @@ window.onload = function() {
 
           
 
+<script>
+        var options = {
+  imgSrc : "https://unsplash.it/g/1024/768?image=874",
+  containerName : "placeholder",
+  rows: 3,
+  columns: 3,
+  margin: 0.4,
+  animTime: 0.3
+}
 
+function ImageGrid(defaults)
+{
+  var r = defaults.rows;
+  var c = defaults.columns;
+  var margin = defaults.margin;
+    
+  var placeholder = document.getElementsByClassName(defaults.containerName)[0];
+  var container = document.createElement('div');
+  container.className = "gridContainer";
+  placeholder.appendChild(container); 
+    
+  var gridTile;  
+
+  var w = (container.offsetWidth / c) -margin;
+  var h = (container.offsetHeight / r) -margin;
+  var arr = [];
+    
+  for (var i=0, l=r*c; i < l; i++)
+  {    
+    gridTile = document.createElement('div');
+    gridTile.className = "gridTile";
+       
+    arr = [(w+margin)*(i%c), (h+margin)*Math.floor(i/c), ((w+margin)*(i%c)+w-margin), (h+margin)*Math.floor(i/c), ((w+margin)*(i%c)+w-margin), ((h+margin)*Math.floor(i/c) + h-margin), (w+margin)*(i%c), ((h+margin)*Math.floor(i/c) + h-margin)];
+    
+    gridTile.style.webkitClipPath = 'polygon('+arr[0]+'px '+ arr[1]+'px,'+arr[2]+'px '+arr[3]+'px, '+arr[4]+'px '+ arr[5] +'px, '+arr[6]+'px '+ arr[7] +'px)';
+    
+    gridTile.style.clipPath = 'polygon('+arr[0]+'px '+ arr[1]+'px,'+arr[2]+'px '+arr[3]+'px, '+arr[4]+'px '+ arr[5] +'px, '+arr[6]+'px '+ arr[7] +'px)';
+           
+    container.appendChild(gridTile);    
+    
+    fixTilePosition(gridTile, i);
+  }
+ 
+  
+  function fixTilePosition(tile, ind)
+  {
+    var centr, centrCol, centrRow, offsetW, offsetH, left, top;
+    
+    centr = Math.floor(c * r / 2);
+    centrCol = Math.ceil(centr/c);
+    centrRow = Math.ceil(centr/r);
+        
+    offsetW = w/centrCol;
+    offsetH = h/centrRow;
+    
+    left = (Math.round((ind % c - centrCol + 1) * offsetW));
+    top = (Math.round((Math.floor(ind/c) - centrRow + 1) * offsetH));
+    
+    tile.style.backgroundPosition = left + "px " + top + "px";
+    
+  }
+}
+
+ImageGrid(options);
+</script>
 </body>
 
 </html>
