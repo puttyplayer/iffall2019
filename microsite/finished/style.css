@@ -127,6 +127,8 @@ h3{
 
 #two{
     background-image: url(l2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #three{
