@@ -12,7 +12,9 @@ html,body{
     font-family: 'Montserrat', sans-serif;
 
 }
-
+span{
+    padding-right: 5%;
+}
 a{
     text-decoration: none;
     color: inherit;
@@ -28,7 +30,7 @@ div{
 }
 .section{
     max-height: 100vh;
-    min-height: 100vh;
+    min-height: 99.9vh;
 }
 h1{
     margin: 0;
@@ -66,8 +68,11 @@ p{
 #landing-image{
     height: 47vh;
     position: absolute;
-    top: 28vh;
-    right: 25vw;
+    top: 29vh;
+    right: 20vw;
+    box-shadow: 0 4px 8px 0 #f2b632, 0 6px 20px 0 #f2b631;
+
+
     
 }
 
@@ -85,7 +90,7 @@ h3{
     opacity: 0.85;
     text-align: center;
     position: relative;
-    top: 65vh;
+    top: 68vh;
     margin-right: auto;
 
     font-size: 30pt;
